@@ -23,7 +23,7 @@ def command_parser():
         "-w",
         "--workspace_path",
         type=str,
-        help=f"The path to the default workspace. By default, this is {os.path.join(_HOME, 'Documents')}"
+        help=f"The path to the default workspace where the newly created repo will be cloned to. By default, this is {os.path.join(_HOME, 'Documents')}"
     )
     args = parser.parse_args()
     return args

@@ -22,8 +22,20 @@ ACCESS_TOKEN="<your_access_token>"
 ```
 
 
-## To use:
+## Usage:
 When inside the `automate-create-project` folder:
 ```
-$ py create.py <your_project_name>
+$ py create.py -h
+
+usage: create.py [-h] [-w WORKSPACE_PATH] github_repo
+
+Creates remote GitHub repository and clones it locally.
+
+positional arguments:
+  github_repo           The GitHub repository to be created remotely and cloned locally.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -w WORKSPACE_PATH, --workspace_path WORKSPACE_PATH
+                        The path to the default workspace where the newly created repo will be cloned to. By default, this is ~/Documents
 ```
