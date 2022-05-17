@@ -7,9 +7,10 @@ Automates the process of creating a new project by creating a new repository on 
 ```
 $ git clone https://github.com/quibbleahr/automate-create-project.git
 $ cd automate-create-project/
+$ python3 -m venv venv
+$ source venv/bin/activate
 $ pip install -r requirements.txt
 $ touch .env
-$ source .create_command.sh
 ```
 
 ## .env file:
@@ -22,7 +23,7 @@ ACCESS_TOKEN="<your_access_token>"
 
 
 ## To use:
-
+When inside the `automate-create-project` folder:
 ```
-$ create <your_project_name>
+$ py create.py <your_project_name>
 ```
